@@ -1,5 +1,12 @@
+@font-face {
+    font-family: 'GlacialIndifference';
+    src: url('GlacialIndifference-Regular.woff') format('woff2'),
+         url('GlacialIndifference-Regular.woff2') format('woff');
+}
+
+
 * {
-    font-family: Helvetica, sans-serif;
+    font-family: 'GlacialIndifference';
 }
 
 body {
@@ -73,6 +80,20 @@ img {
     width: 50vw;
 }
 
+div > img {
+    width: 450px;
+    height: 200px;
+    position: absolute;
+    right: 1275px;
+    top: 300px;
+}
+
+div > img:hover {
+    background-color: rgba(201, 201, 201, 0.1);
+}
+
+
+
 .textcontainer {
     max-width: 100vw;
     padding-top: 100px;
@@ -108,6 +129,11 @@ p > a {
     font-weight: bold;
 }
 
+p > a:hover{
+    cursor: pointer;
+    color: #574658;
+}
+
 .inputcontainer {
     display: flex;
     flex-direction: column;
@@ -134,4 +160,9 @@ input {
     color: red;
     font-size: 15px;
     margin-top: -10px;
+}
+
+button[type='submit']:hover {
+    cursor: pointer;
+    background-color: #574658;
 }
