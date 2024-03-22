@@ -50,7 +50,7 @@ input[type='tel']:focus {
 
 button {
     appearance: none;
-    background-color: #596D48;
+    background-color: #301934;
     color: white;
     padding: 13px 35px;
     border-radius: 5px;
@@ -74,27 +74,36 @@ img {
 }
 
 .textcontainer {
+    max-width: 100vw;
     padding-top: 100px;
     padding-bottom: 100px;
     display: flex;
     flex-direction: column;
-    width: 100vw;
 }
 
-div > h1:nth-of-type(1) {
-    max-width: 1000px;
+.textcontainer > h3 {
+    flex-shrink: 1;
+    flex-basis: 0;
+    min-width: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+
+div > h3:nth-of-type(1) {
+    max-width: 73%;
     position: relative;
     left: 50px;
     flex-shrink: 1;
 }
 
-div > h1:nth-of-type(2) {
+div > h3:nth-of-type(2) {
     position: relative;
     left: 50px;
 }
 
 p > a {
-    color: #596D48;
+    color: #301934;
     text-decoration: none;
     font-weight: bold;
 }
@@ -120,3 +129,9 @@ input {
     margin-bottom: 15px;
 }
 
+
+.passwordsmustmatch {
+    color: red;
+    font-size: 15px;
+    margin-top: -10px;
+}
