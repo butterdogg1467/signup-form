@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     let passwordsMustMatch = document.querySelector('.passwordsmustmatch')
     
     confirmPassword.addEventListener('input', function () {
-        if (password.value != confirmPassword.textContent) {
+        if (password.value != confirmPassword.value) {
             passwordsMustMatch.textContent = 'Passwords Must Match'
             
         } else {
@@ -12,6 +12,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     })
 
+    password.addEventListener('input', function () {
+        if (password.value != confirmPassword.value) {
+            passwordsMustMatch.textContent = 'Passwords Must Match'
+            
+        } else {
+            passwordsMustMatch.textContent = ' '
+        }
+    })
     
     
 })
